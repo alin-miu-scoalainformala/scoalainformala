@@ -1,0 +1,12 @@
+.produs-container {
+    border: 1px solid black;
+}
+.produs {
+    float: left;
+}
+.pret {
+    float: right;    
+}
+.produs-footer {
+    clear: both;
+}
