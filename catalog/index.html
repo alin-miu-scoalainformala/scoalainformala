@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="lista_elevi_wrapper">
+            <h2>Lista elevi</h2>
+            <div id="adaugare_elev" class="box">
+                <span>Nume: </span> 
+                <input type="text" id="nume_elev" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAdaugareElev').click();}"
+                />
+                <input type="button" value="Adauga elev" id="btnAdaugareElev" onclick="adaugareElev(); displayElevi();" />
+            </div>
+            <div class="box">
+                <a class="button" onclick="displaySortAscElevi()">Sorteaza ascendent dupa medie note</a>
+                <br/>
+                <a class="button" onclick="displaySortDescElevi()">Sorteaza descendent dupa medie note</a>
+                <div id="lista_elevi">
+                    Nici un elev adaugat
+                </div>
+            </div>
+
+        </div>
+
+        <div id="lista_note_wrapper">
+            <input type="button" onclick="hideNote()" value="Ascunde notele" />
+            <h2>Note elev: <span id="note_elev_nume"></span></h2>
+            <div id="adaugare_nota" class="box">
+                <span>Nota: </span> <input type="text" id="nota_elev" onkeypress="if(event.keyCode==13) {document.getElementById('btnAdaugareNota').click();}"
+                />
+                <input type="button" value="Adauga nota" id="btnAdaugareNota" onclick="adaugareNota(); displayNote();" />
+            </div>
+            <div class="box">
+                <a class="button" onclick="displaySortAscNote()">Sorteaza ascendent notele</a>
+                <br/>
+                <a class="button" onclick="displaySortDescNote()">Sorteaza descendent notele</a>
+                <div id="lista_note">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

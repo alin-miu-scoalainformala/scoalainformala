@@ -85,4 +85,21 @@ function generateRandomNumberBetween0And100() {
     return Math.floor(Math.random() * 100);
 }
 
+
+function generateRandomNumberBetween0And10() {
+    return Math.floor(Math.random() * 10);
+}
+
 displayProducts(tvs);
+
+
+
+function displayNote() {
+    var noteHtml = "";
+    for(var i=0;i<10;i++) {
+        noteHtml += "<div>" + generateRandomNumberBetween0And10() + "</div>";
+    }
+    document.getElementById("note").innerHTML = noteHtml;
+}
+
+displayNote();
