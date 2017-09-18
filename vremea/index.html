@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <input type="text" autofocus id="oras" onkeypress="if(event.keyCode==13) {document.getElementById('btnGetVremeaAsJson').click();}"
+    />
+    <input type="button" id="btnGetVremeaAsJson" onclick="getCurrentWeatherAsJson()" value="Afiseaza vremea" />
+    <input type="button" id="btnGetVremeaAsJson" onclick="getCurrentForecastAsJson()" value="Afiseaza prognoza" />
+    <div id="vremea">
+        <img id="cer_image" src="" />
+        <br/>
+        <span>Descriere: </span><span id="cer_label"></span>
+        <br/>
+        <span>Umiditate: </span><span id="umiditate"></span>
+        <br/>
+        <span>Presiune: </span><span id="presiune"></span>
+        <br/>
+        <span>Temperatura curenta: </span><span id="temperatura_curenta"></span>
+        <br/>
+        <span>Minima zilei: </span><span id="temperatura_min"></span>
+        <br/>
+        <span>Maxima zilei: </span><span id="temperatura_max"></span>
+        <br/>
+    </div>
+
+    <div id="map" style="width:300px;height:200px;"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+</body>
+
+</html>
