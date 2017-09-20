@@ -48,8 +48,65 @@ function getCurrentForecastAsJson() {
     xhttp.send();
 }
 
+class Forecast {
+    constructor(date, description, icon, temperature, time) {
+        this.date = date;
+        this.description = description;
+        this.icon = icon;
+        this.temperature = temperature;
+        this.time = time;
+    }
+}
+
 function displayForecast(json) {
     console.log(json);
+    var rawForecast = [];
+
+    //craete objects
+    for(var i=0;i<json.list.length;i++) {
+        let date = getDateFromText(json.list[i].dt_txt);
+        let description = json.list[i].weather[0].description;
+        let icon = json.list[i].weather[0].icon;
+        let temperature = json.list[i].main.temp;
+        let time = getTimeFromText(json.list[i].dt_txt);
+        rawForecast.push(new Forecast(date, description, icon, temperature, time));
+    }
+
+    //group objects by date
+    var forecast = [];
+    for(var i=0;i<rawForecast.length;i++) {
+        var key = rawForecast[i].date.getDate() + "/" + rawForecast[i].date.getMonth() + "/" + rawForecast[i].date.getYear();
+        if(forecast[key] == undefined) {
+            forecast[key] = [];
+        }
+        forecast[key].push(rawForecast[i]);
+    }
+
+    //display the grouped forecast
+    var htmlForecast = "";
+    for(key in forecast) {
+        htmlForecast += "<div><span><strong>Ziua: " + key + "</strong></span>";
+        htmlForecast += "<ul>";
+        for(var i=0;i<forecast[key].length;i++) {
+            htmlForecast += "<li><img src='" + URL_WEATHER_ICON_PREFIX + forecast[key][i].icon + ".png' /></li>";
+            htmlForecast += "<li>Ora: " + forecast[key][i].time + "</li>";
+            htmlForecast += "<li>Temperatura: " + forecast[key][i].temperature + "</li>";
+            htmlForecast += "<li>Descriere: " + forecast[key][i].description + "</li>";            
+        }
+        htmlForecast += "</ul></div>";
+    }
+    document.getElementById("prognoza").innerHTML = htmlForecast;
+}
+
+function getDateFromText(text) {
+    var year = text.substr(0,4);
+    var month = text.substr(5,2);
+    var date = text.substr(8,2);
+    return new Date(year, month, date);
+}
+
+function getTimeFromText(text) {
+    return text.substr(11,5);
 }
 
 function displayMap(lat, lon) {

@@ -1,0 +1,25 @@
+#form_wrapper {
+    text-align: center;
+}
+#vremea_wrapper {
+    float: left;
+}
+#vremea {
+    float: left;
+}
+#map {
+    float: right;
+}
+#prognoza_wrapper {
+    float: left;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    list-style: none;
+}
+#prognoza_wrapper div {
+    float: right;
+}
