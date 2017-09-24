@@ -85,7 +85,7 @@ function displayForecast(json) {
     //display the grouped forecast
     var htmlForecast = "";
     for(key in forecast) {
-        htmlForecast += "<div><span><strong>Ziua: " + key + "</strong></span>";
+        htmlForecast += "<div class='div-day'><span><strong>Ziua: " + key + "</strong></span>";
         htmlForecast += "<ul>";
         for(var i=0;i<forecast[key].length;i++) {
             htmlForecast += "<li><img src='" + URL_WEATHER_ICON_PREFIX + forecast[key][i].icon + ".png' /></li>";
