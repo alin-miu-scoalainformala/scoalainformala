@@ -13,13 +13,20 @@ for(var i=0;i<10;i++) {
 function displayProducts(arr) {
     var productsHtml = "";
     var nrProduse = arr.length;
+
+    productsHtml += `
+        <table>
+            <tr>
+                <th>Produs</th>
+                <th>Pret</th>
+            </tr>
+    `;
     for(var i=0;i<nrProduse;i++) {
         productsHtml += `
-        <div class="produs-container">
-            <div class="produs">${arr[i].nume}</div>
-            <div class="pret">${arr[i].pret}</div>
-            <div class="produs-footer"></div>
-        </div>
+        <tr>
+            <td>${arr[i].nume}</td>
+            <td>${arr[i].pret}</td>
+        </tr>
         `;
     }
     document.getElementById("produse").innerHTML = productsHtml;
@@ -91,15 +98,3 @@ function generateRandomNumberBetween0And10() {
 }
 
 displayProducts(tvs);
-
-
-
-function displayNote() {
-    var noteHtml = "";
-    for(var i=0;i<10;i++) {
-        noteHtml += "<div>" + generateRandomNumberBetween0And10() + "</div>";
-    }
-    document.getElementById("note").innerHTML = noteHtml;
-}
-
-displayNote();

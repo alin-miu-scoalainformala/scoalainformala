@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h3>SHOPPING LIST</h3>
+        <div id="input_wrapper" class="box">
+            <input type="text" id="item_description" autofocus onkeypress="if(event.keyCode==13) {document.getElementById('btnAddItem').click();}"
+            />
+            <select id="item_capacity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button class="button button-add" id="btnAddItem" onclick="addItem(); displayItems();">Add item</button>
+        </div>
+        <div id="lista_cumparaturi_wrapper " class="box">
+            <button class="button button-sort" onclick="sortAsc(); displayItems();">Sort asc</button>
+            <button class="button button-sort" onclick="sortDesc(); displayItems();">Sort desc</button>
+            <div id="lista_cumparaturi" class="box">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
