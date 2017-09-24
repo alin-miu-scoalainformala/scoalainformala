@@ -1,5 +1,5 @@
 #form_wrapper {
-    text-align: center;
+    text-align: left;
 }
 #vremea_wrapper {
     float: left;
@@ -22,4 +22,44 @@ li {
 }
 #prognoza_wrapper div {
     float: right;
+}
+
+html{
+    background: #e3f2fd;
+    padding: 10px;
+}
+
+body {
+    border-radius: 10px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 20px;
+}
+
+.content{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.button{
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Georgia !important;        
+}
+
+.button-top{
+    padding: 8px;
+    background: #1e88e5;
+    color: white;
+    border: 1px solid #1e88e5;
+
 }
