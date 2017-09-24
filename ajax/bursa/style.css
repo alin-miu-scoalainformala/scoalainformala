@@ -1,0 +1,11 @@
+.stock-box {
+    float: left;
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.stock-symbol {
+    font-weight: bold;
+    text-align: center;
+}
