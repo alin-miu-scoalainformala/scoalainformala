@@ -1,7 +1,7 @@
 var stock_signs = "\"GOOGL\",\"AAPL\",\"FB\",\"MSFT\"";
 var yahoo_stocks = "https://query.yahooapis.com/v1/public/yql?format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=&q=select * from yahoo.finance.quotes where symbol in (" + stock_signs + ")";
-var curs_bnr = "http://www.bnr.ro/nbrfxrates.xml";
-var curs_euro = "http://api.fixer.io/latest?symbols=RON,GBP,USD"
+var curs_bnr = "https://www.bnr.ro/nbrfxrates.xml";
+var curs_euro = "https://api.fixer.io/latest?symbols=RON,GBP,USD"
 
 
 function getStockPrices() {
@@ -89,5 +89,5 @@ function getHtmlStock(stock) {
 }
 
 getStockPrices();
-getGetCursBnr();
+//getGetCursBnr();
 getCursEuro();
