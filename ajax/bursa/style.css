@@ -1,11 +1,53 @@
 .stock-box {
     float: left;
-    border: 1px solid grey;
+    border: 1px solid #B4D2B2;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
+    background: #B4D2B2;
 }
 .stock-symbol {
     font-weight: bold;
     text-align: center;
+}
+
+#stocks_wrapper {
+    display: inline-block;
+}
+
+#exchange_wrapper {
+    margin-top: 20px;
+}
+
+.curs-box {
+    float: left;
+    background: #FBB595;
+    border: 1px solid #FBB595;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+html{
+    background: white;
+    padding: 20px;
+}
+
+body {
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h3 {
+    color: #2F424A !important;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #FFFDF5;
+    margin: 1em 0;
+    padding: 0; 
 }
