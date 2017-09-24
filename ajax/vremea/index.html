@@ -10,12 +10,15 @@
     <div id="form_wrapper">
         <input type="text" autofocus id="oras" onkeypress="if(event.keyCode==13) {document.getElementById('btnGetVremeaAsJson').click();}"
         />
-        <input type="button" id="btnGetVremeaAsJson" onclick="getCurrentWeatherAsJson()" value="Afiseaza vremea" />
-        <input type="button" id="btnGetVremeaAsJson" onclick="getCurrentForecastAsJson()" value="Afiseaza prognoza" />
+        <input type="button" class="button button-top" id="btnGetVremeaAsJson" onclick="getCurrentWeatherAsJson()" value="Afiseaza vremea"
+        />
+        <input type="button" class="button button-top" id="btnGetVremeaAsJson" onclick="getCurrentForecastAsJson()" value="Afiseaza prognoza"
+        />
     </div>
     <div style="clear: both;"></div>
     <div id="vremea_wrapper">
-        <h3>Vremea acum:</h3>
+        <h3>Vremea acum</h3>
+        <hr>
         <div id="vremea">
             <img id="cer_image" src="" />
             <br/>
@@ -31,13 +34,16 @@
             <br/>
             <span>Maxima zilei: </span><span id="temperatura_max"></span>
         </div>
-        <div id="map" style="width:300px;height:200px;"></div>
+        <div id="map"></div>
+        <div class="clear"></div>
     </div>
 
     <div id="prognoza_wrapper">
-        <h3>Vremea in urmatoarele zile:</h3>
-        <div id="prognoza">
-
+        <h3>Vremea in urmatoarele zile</h3>
+        <hr>
+        <div class="content-prognoza">
+            <div id="prognoza">
+            </div>
         </div>
     </div>
 
