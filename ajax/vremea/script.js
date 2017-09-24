@@ -75,7 +75,7 @@ function displayForecast(json) {
     //group objects by date
     var forecast = [];
     for(var i=0;i<rawForecast.length;i++) {
-        var key = rawForecast[i].date.getDate() + "/" + rawForecast[i].date.getMonth() + "/" + rawForecast[i].date.getYear();
+        var key = rawForecast[i].date.getDate() + "/" + rawForecast[i].date.getMonth() + "/" + rawForecast[i].date.getFullYear();
         if(forecast[key] == undefined) {
             forecast[key] = [];
         }

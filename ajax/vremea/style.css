@@ -1,17 +1,37 @@
 #form_wrapper {
-    text-align: left;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 #vremea_wrapper {
-    float: left;
+    width: 100%;
+    padding: 20px;
+    background: white;    
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.content-vremea{
+    width: 100%;
+}
+.clear{
+    clear: both;
 }
 #vremea {
     float: left;
+    margin-top: 20px;
 }
 #map {
     float: right;
 }
 #prognoza_wrapper {
+    width: 100%;
+    padding: 20px;
     float: left;
+    margin-top: 20px;
+    background: white;    
+    border-radius: 5px;
 }
 ul {
     margin: 0px;
@@ -20,25 +40,28 @@ ul {
 li {
     list-style: none;
 }
+
+li img{
+    margin-top: 20px; 
+}
+
 #prognoza_wrapper div {
-    float: right;
+    float: left;
+    text-align: center;
 }
-
-html{
-    background: #e3f2fd;
-    padding: 10px;
-}
-
-body {
-    border-radius: 10px;
-    width:50%;
+#prognoza{
+    width: 100%;
+    margin-top: 20px;
     margin-left:auto;
     margin-right:auto;
+}
+html{
+    background: #e3f2fd;
     padding: 20px;
 }
 
-.content{
-    width:50%;
+body {
+    width:70%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -46,7 +69,6 @@ body {
 input[type=text] {
     width: 60%;
     padding: 10px;
-    margin: 8px 0;
     box-sizing: border-box;
 }
 
@@ -57,9 +79,15 @@ input[type=text] {
 }
 
 .button-top{
+    width: 15%;
+    margin-left: 20px;
     padding: 8px;
     background: #1e88e5;
     color: white;
     border: 1px solid #1e88e5;
+}
 
+#map{
+    width:700px;
+    height:200px;
 }
