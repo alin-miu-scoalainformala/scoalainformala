@@ -1,0 +1,70 @@
+{
+    "menu": [
+        {
+            "nume": "pastrama de berbecut",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_pastrama.jpg",
+            "reteta": "r",
+            "ingrediente": "pastrama"
+        },
+        {
+            "nume": "chiftelute marinate",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_chiftelutze.jpg",
+            "reteta": "c m",
+            "ingrediente": "chiftele"
+        },
+        {
+            "nume": "fasole batuta",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_fasole_batuta.jpg",
+            "reteta": "f b",
+            "ingrediente": "fasole"
+        },
+        {
+            "nume": "copan de rata",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_copan-rata-.jpg",
+            "reteta": "r",
+            "ingrediente": "rata"
+        },
+        {
+            "nume": "cotlete de berbecut",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_cotlete-miel.jpg",
+            "reteta": "c b",
+            "ingrediente": "berbecut"
+        },
+        {
+            "nume": "carnati afumati",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_carnati.jpg",
+            "reteta": "c a",
+            "ingrediente": "carnati"
+        },
+        {
+            "nume": "salata",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_salata-popey.jpg",
+            "reteta": "s",
+            "ingrediente": "salata"
+        },
+        {
+            "nume": "jumari",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_musaca.jpg",
+            "reteta": "j",
+            "ingrediente": "jumari"
+        },
+        {
+            "nume": "carne de la garnita",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_musaca.jpg",
+            "reteta": "c g",
+            "ingrediente": "malai"
+        },
+        {
+            "nume": "icre",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_icre-stiuca.jpg",
+            "reteta": "i",
+            "ingrediente": "icre"
+        },
+        {
+            "nume": "saramura",
+            "imagine": "http://www.lacrimisisfinti.com/images/mancare_saramura.jpg",
+            "reteta": "s",
+            "ingrediente": "peste"
+        }
+    ]
+}
