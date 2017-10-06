@@ -51,3 +51,6 @@ h1 {
 table {
     width: 100%;
 }
+#map {
+    height: 500px;
+}

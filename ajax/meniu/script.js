@@ -4,18 +4,19 @@ var gJson = undefined;
 var menu = [];
 
 class SimpleMenuItem {
-    constructor(nume, imagine) {
+    constructor(nume, imagine, ingrediente) {
         this.nume = nume;
         this.imagine = imagine;
+        this.ingrediente = ingrediente;
     }
 }
 
 class DetailedMenuItem {
-    constructor(nume, imagine, reteta, ingrediente) {
+    constructor(nume, imagine, ingrediente, reteta) {
         this.nume = nume;
         this.imagine = imagine;
-        this.reteta = reteta;
         this.ingrediente = ingrediente;
+        this.reteta = reteta;
     }
 }
 
@@ -32,10 +33,10 @@ function getMenuAsJson() {
             for (var i = 0; i < keys.length; i++) {
                 var key = keys[i];
                 var item = json.menu[key];
-                menu.push(new SimpleMenuItem(item.nume, item.imagine));
+                menu.push(new SimpleMenuItem(item.nume, item.imagine, item.ingrediente));
             }
 
-            displayMenu();
+            displayMenu(menu);
         }
     };
     xhttp.open("GET", MENU_SERVER_URL, true);
@@ -61,7 +62,7 @@ function getMenuItemAsJson() {
     xhttp.send();
 }
 
-function displayMenu() {
+function displayMenu(menu) {
     var h = `
         <table>
     `;
@@ -75,6 +76,7 @@ function displayMenu() {
                 </td>
                 <td>
                     <div class="menu_item_nume">${menu[i].nume}</div>
+                    <div class="menu_item_ingrediente">${menu[i].ingrediente}</div>
                 </td>
                 <td>
                     <div class="menu_item_detalii">
@@ -132,4 +134,15 @@ function getParameterByName(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function searchIngrediente() {
+    var s = document.getElementById("search_ingredient").value;
+    var listaPreparateCeContinIngredientulCautat = [];
+    for(var i=0;i<menu.length;i++) {
+        if(menu[i].ingrediente.indexOf(s)>-1) {
+            listaPreparateCeContinIngredientulCautat.push(menu[i]);
+        }
+    }
+    displayMenu(listaPreparateCeContinIngredientulCautat);
 }
