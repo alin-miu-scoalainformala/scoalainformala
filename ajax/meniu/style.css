@@ -1,6 +1,7 @@
 body {
     font-family: Raleway,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #222;
+    margin: 20px;
 }
 h1 {
     margin: 10px;
@@ -12,19 +13,16 @@ h1 {
 .menu_item {        
     border: 1px solid #EFEFEF;
     border-radius: 3px;
-    margin: 10px;
-    padding: 10px;    
 }
 .menu_item_img_container {
-    text-align: center;
+    text-align: left;
 }
 .menu_item img {        
-    height: 80px;
+    height: 150px;
 }
 .menu_item_nume {
     font-weight: bold;
     font-size: larger;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .menu_item_pret {
@@ -36,9 +34,27 @@ h1 {
 }
 .btn {
     border-radius: 3px;
-    background: white;
-    border: 1px solid black;
+    background: #e34262;
+    border: 1px solid #e34262;
     padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.btn-contact{
+    border-radius: 3px;
+    background:#6796f9;
+    border: 1px solid #6796f9;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.btn-cauta{
+    border-radius: 3px;
+    background:    #bba7db;    
+    border: 1px solid #bba7db;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
 }
 .accent {
     border: none;
@@ -51,6 +67,47 @@ h1 {
 table {
     width: 100%;
 }
+tr{
+    padding: 20px !important;
+    margin: 20px !important;
+}
+td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.left-td{
+    width: 10%;
+}
+.center-td{
+    width: 40%;
+}
+.right-td{
+    width: 10%;
+}
 #map {
     height: 500px;
 }
+.main{
+    width: 80%;
+    background:#baf4ed;
+    border-radius: 3px;
+    margin: auto;
+    padding: 40px;
+}
+#menu{
+    margin-top: 20px;
+}
+input[type="text"] {
+    padding: 10px;
+    width:30%;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+  }
+  input[type="text"]:focus,
+  input[type="text"].focus {
+    border-bottom: solid 2px #969696;
+  }
+  .space{
+      margin-top: 20px;
+  }

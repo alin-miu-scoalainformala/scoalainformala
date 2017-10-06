@@ -69,16 +69,16 @@ function displayMenu(menu) {
     for (var i = 0; i < menu.length; i++) {
         h = h + `
             <tr class="menu_item">
-                <td>                
+                <td class="left-td">                
                     <div class="menu_item_img_container">
                         <img src="${menu[i].imagine}" class="menu_item_img" />
                     </div>
                 </td>
-                <td>
+                <td class="center-td">
                     <div class="menu_item_nume">${menu[i].nume}</div>
                     <div class="menu_item_ingrediente">${menu[i].ingrediente}</div>
                 </td>
-                <td>
+                <td class="right-td">
                     <div class="menu_item_detalii">
                         <a href="details.html?id=${i}" class="btn">DETALII</a>
                     </div>
