@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div style="height: 60px;">
+        <h1 style="float: left;">
+            <a href="./index.html">Talcioc</a>
+        </h1>
+        <a href="./cart.html" style="float: right; margin-right: 10px; margin-top: 15px;" class="btn">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cos cumparaturi
+        </a>
+        <span class="clr"></span>
+    </div>
+    <div id="details" class="box">
+        <img class="loading" src="./img/loading.gif" />
+        <div id="details_container">
+            <img id="idImgProductDetails" />
+            <div id="idProductDetails">
+                <div style="margin: 5px;">
+                    <span id="idNumeProductDetails" class="produs_nume"></span> <br/>
+                    <span id="idDescriereProductDetails"></span> <br/>
+                    <span id="idPretProductDetails" class="produs_pret"></span> <br/>
+                    <hr/> In stoc: <span id="idCantitateProductDetails"></span> buc. <br/>
+                    <div>
+                        Cantitate <input type="number" value="1" id="cantitateDeCumparat" />
+                    </div>
+                </div>
+                <button class="btn accent" onclick="cumparaProdus()">Adauga in cos</button>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div id="notification">
+        <span id="notification_message">ABC</span>
+    </div>
+    <script>
+        getProductDetailsAsJson(displayProductDetails);
+    </script>
+</body>
+
+</html>

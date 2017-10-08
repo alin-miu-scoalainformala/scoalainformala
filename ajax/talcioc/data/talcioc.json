@@ -1,0 +1,52 @@
+{
+    "produse": [
+        {
+            "nume": "Cannon 5D Mark III",
+            "cantitate": 5,
+            "imagine": "https://www.bhphotovideo.com/images/images1000x1000/Canon_5260B009_EOS_5D_Mark_III_847546.jpg",
+            "pret": 3500
+        },
+        {
+            "nume": "Laptop HP",
+            "cantitate": 3,
+            "imagine": "http://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05478859.png",
+            "pret": 700
+        },
+        {
+            "nume": "Laptop MacBook",
+            "cantitate": 2,
+            "imagine": "https://cdn.macrumors.com/article-new/2016/10/macbook-pro-late-2016.jpg",
+            "pret": 4100
+        },
+        {
+            "nume": "Samsung Galaxy S8",
+            "cantaitate": 120,
+            "imagine": "http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s8-.jpg",
+            "pret": 800
+        },
+        {
+            "nume": "Samsung Smart TV",
+            "cantitate": 20,
+            "imagine": "http://images.samsung.com/is/image/samsung/ae-uhd-ju6000-ua48ju6000kxzn-005-r-perspective-black?$PD_GALLERY_JPG$",
+            "pret": 1799
+        },
+        {
+            "nume": "Sony PS4",
+            "cantitate": 30,
+            "imagine": "https://media.playstation.com/is/image/SCEA/playstation-4-slim-vertical-product-shot-01-us-07sep16?$TwoColumn_Image$",
+            "pret": 120
+        },
+        {
+            "nume": "Xbox One X",
+            "cantitate": 300,
+            "imagine": "https://target.scene7.com/is/image/Target/52614582_Alt01?wid=520&hei=520&fmt=pjpeg",
+            "pret": 400
+        },
+        {
+            "nume": "iPhone X",
+            "cantitate": 50,
+            "imagine": "https://staticshop.o2.co.uk/product/images/iphone-x-space-grey-sku-header.png?cb=4097182fcd8a0d7b7e51b89d4a48f5bc",
+            "pret": 1000
+        }
+    ]
+}
