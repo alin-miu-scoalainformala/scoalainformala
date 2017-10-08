@@ -101,6 +101,10 @@ function displayProductsToAdmin() {
 }
 
 function deleteProduct(id, callback) {
+    document.getElementsByClassName("loading")[0].style.display = "inline-block";
+    document.getElementById("tabelGestionareProduse").style.display = 'none';
+    showAdminProductsList();
+    
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
