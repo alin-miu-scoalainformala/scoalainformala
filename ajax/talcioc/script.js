@@ -278,11 +278,11 @@ function afisazaProduseleCumparate() {
                 </td>
                 <td>${itemsFromStorage[i].pretProdusCumparat}</td>
                 <td class="cCantiate">
-                    <a class="byedItem" onclick="decreaseQuantity(${i}); afisazaProduseleCumparate();">-</a>
+                    <a class="byedItem desktopOnly" onclick="decreaseQuantity(${i}); afisazaProduseleCumparate();">-</a>
                     ${itemsFromStorage[i].cantitateProdusCumparat}
-                    <a class="byedItem" onclick="increaseQuantity(${i}); afisazaProduseleCumparate();">+</a>
+                    <a class="byedItem desktopOnly" onclick="increaseQuantity(${i}); afisazaProduseleCumparate();">+</a>
                 </td>
-                <td>${subtotal}</td>
+                <td class="desktopOnly">${subtotal}</td>
                 <td><a onclick="removeItemFromLocalstore(${i});">Remove</a></td>
             </tr>
         `;
