@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Agenda</h1>
+        <div id="input_wrapper" class="box">
+            Nume:    <input type="text" id="numeContact" autofocus /> 
+            Telefon: <input type="number" id="nrTelefon" onkeypress="if(event.keyCode==13) {document.getElementById('btnAdd').click();}" /> 
+            <button class="btn button-add" id="btnAdd" onclick="saveContact(); display();">Adauga contact</button>
+        </div>
+        <div id="lista_wrapper" class="box">
+            <div id="lista" class="box">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
