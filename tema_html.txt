@@ -1,8 +1,0 @@
-Incercati sa implementati acasa ca si exercitiu urmatoarele pagini, folosind doar elemente de html:
-
-old website: http://www.htmliseasy.com/exercises/prowebcap.gif
-trei poeti: http://coredogs.com/content_media/lessons/servercore/web-site-templates/exercises/poets/longfellow/index.html
-creati un website al orasului vostru natal in care sa folosti mai multe pagini html, ce vor fi conecate intre ele printr-un meniu ce foloseste link-uri
-Incercati sa reproduceti cat mai exact paginile de la punctele 1 si 2. La exercitiul de la punctul 3, puteti fi creativi si sa folositi orice fel de elemente vi se par potrivite.
-
-Va rog sa urcati codul pe GitHub si sa furnizati link-urile catre cod si catre pagina de hosting pe care v-a generat-o GitHub.
